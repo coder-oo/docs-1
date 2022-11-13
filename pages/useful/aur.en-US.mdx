@@ -4,3 +4,28 @@ full: true
 ---
 
 # Installing AUR
+
+First we must check our ethernet connection with this command:
+```
+ping google.com -c 5
+```
+
+Then, we'll install `git` using pacman:
+```
+sudo pacman -S git # install
+```
+
+After install `git` package, we'll clone aur helper repository from [aur.archlinux.org](aur.archlinux.org):
+```
+git clone https://aur.archlinux.org/yay-bin.git # for yay
+git clone https://aur.archlinux.org/paru-bin.git # for paru
+```
+
+Then we'll access to cloned repository and install aur helper:
+```
+cd yay-bin # for yay
+cd paru-bin # for paru
+makepkg -si
+```
+
+Writed by <a href="https://github.com/coder-oo">◕‿◕ 匚ㄖᗪ乇尺 ㄖㄖ •◡•</a>
